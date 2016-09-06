@@ -1,0 +1,17 @@
+{
+  "name": "Hello World!",
+  "description": "My first Chrome App.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "browser_action":{
+  	"default_icon":{
+		  			 "16": "img/calculator-16.png",
+		  			 "128": "img/calculator-128.png" 
+		  		   },
+	"default_title":"MyApp",	  		   
+  	"default_popup":"index.html"
+  },
+  "permissions": [
+    				"activeTab"
+  				 ]
+}
