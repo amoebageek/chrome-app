@@ -11,6 +11,14 @@
 	"default_title":"MyApp",	  		   
   	"default_popup":"index.html"
   },
+  "content_scripts": [ 
+  					   {
+						  "js": ["js/content.js" ],
+						  
+						  "matches": [ "*://*/*" ],
+					      "run_at": "document_start"
+					   }
+					 ],
   "permissions": [
     				"activeTab"
   				 ]

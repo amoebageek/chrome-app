@@ -1,2 +1,9 @@
+chrome.tabs.query( {'active':true},
+	
+	function(tabs){
 
-document.getElementById("myButton").addEventListener("");
+		chrome.tabs.sendMessage(tabs[0].id,'MyMessage',function(response){
+
+			document.getElementById('ContentArea').innerHTML=response;
+		});
+	});
